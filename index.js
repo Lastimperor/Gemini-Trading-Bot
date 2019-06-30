@@ -26,7 +26,7 @@ var strategy = function(){
         .then(response => {
           console.log("buy successful")
           hasPosition = true;
-          // wait 1000 mill seconds => ctrl + c to stop on windows powershell
+          // wait 1000 mill seconds => ctrl + c 
           setTimeout(strategy, 1000);
         })
         .catch(error => console.error)
@@ -39,7 +39,7 @@ var strategy = function(){
         .then(response => {
           console.log("sell successful")
           hasPosition = false;
-          // wait 1000 mill seconds => ctrl + c to stop on windows powershell
+          // wait 1000 mill seconds => ctrl + c 
           setTimeout(strategy, 1000);
         })
         .catch(error => console.error)
@@ -47,7 +47,7 @@ var strategy = function(){
 
       else{
         console.log("HOLD!");
-        // wait 1000 mill seconds => ctrl + c to stop on windows powershell
+        // wait 1000 mill seconds => ctrl + c 
         setTimeout(strategy, 1000);
       }
 
